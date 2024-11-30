@@ -1,0 +1,247 @@
+/* Esto es una condiguracion general para todo el cuerpo, Incluyendo imagen de fondo, fuente, y el efecto ocuro de negro sobre la imagen */
+body {
+    font-family: "League Spartan", sans-serif;
+    font-style: normal;
+    background: rgba(0, 0, 0, 0.85) url('../images/Hojas.jpg') space;
+    background-blend-mode: overlay;
+  }  
+
+a   {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+}
+
+/* ############################################################################################################################## */
+/* ############################################################################################################################## */
+header {
+    /* Se da la imagen de fondo para el H1 y H2 de pagina*/
+    background-image: url("../images/fondo\ recortado.jpg");
+/*     Se ajusta automaticamente */
+    background-size: cover;
+    /* Se crea un borde al cuadro de la imagen */
+    border-radius: 70px; 
+    margin-bottom: 40px;
+    /* Margenes de Logo y el titulo */
+    margin-inline: 5%;
+    /* permite jugar mas con los objetos de la Row */
+    display: flex;
+    /* le da un ancho total del 90% de la pantalla */
+    width: 90%;
+    /* Alinea los objetos en el contenedor para que ocupen el mismo espacio , deja espacio entre los margenes y entre ellos mismos*/
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    /* Si el logo o mis caracteres no tienen espacio queden detras de la caja y no sobresale por lar orilla */
+    overflow: hidden;
+}
+/* Quiero hacer un experimento, solo lo deje en modo oculto. */
+h1  {
+    /* hace que el objeto no ocupe espacio */
+    display: none;
+    /* cuando no ocupa espacio ademas lo escondo para que no ocupe espacio. ni interrumpa a los demas */
+    visibility: hidden; 
+}
+/* h1 {                  Esto fueron pruebas lo dejo para que no se me olvide
+    text-align: right;
+    font-size: 80px;
+    margin-right: 30%;
+    margin-top: 1px;
+
+} */
+h2 {
+    justify-self: auto;
+    text-align: right;
+    font-size: 40px;
+    margin-top: 160px;
+    text-align: center;
+    /* hace que ocupen el mismo espacio con la imagen dentro dela caja 50% cada uno*/
+    flex: 1;
+    max-width: 40%;
+    color: white;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.7); 
+} 
+.logo {
+
+    display: flexbox;
+    flex:wrap;
+    max-width: 50%;
+}
+
+/* ############################################################################################################################## */
+/* ############################################################################################################################## */
+/* table {               Experimento que hice con una tabla - Spoiler: Salio Mal (No era recomendable)
+    width: 100%;
+    table-layout: initial;
+    td {
+    justify-content: right;
+    text-align: right;
+}
+}*/
+.menu {
+    /* centrar el texto  */
+    text-align: center;
+    /* Quitar el Punto de la Lista */
+    list-style-type: none;
+    padding-inline: 5%;
+    margin-inline: 4%;
+    /* Sacar el efecto vertical de las listas */
+    display: flex;
+    /* Dejar un espacio entre elementos de la lista, para que no quede todo pegado */
+    gap: 1%;
+    text-align: center;
+    /* Deja mi menu al centro de la pantalla */
+    justify-content: center;
+    font-size: 25px;    
+    margin-right: 4%;
+}
+
+.cajalink   {
+    text-decoration: none;
+    background-color: #4E342E;
+/*     margin-left: 5%; */
+    border-radius: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-inline: 7%;
+    gap: 4px;
+    color: white;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.7);
+    width: 100%;
+    padding-top: 10px ;
+    padding-bottom: 5px;
+}
+.cajalink:hover {
+    
+    background-color: #CFD8DC;
+    color: black;
+    text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.7); 
+}
+/* ############################################################################################################################## */
+/* ############################################################################################################################## */
+
+h3 {
+    background-color: #D7CCC8;
+    display: flex;
+    justify-content: center;
+    border-radius: 40px;
+    /* da mas espacio a la caja para hacer cambios esteticos, en  mi caso */
+    padding-bottom: 7px;
+    padding-top: 11px;
+    /* Es un margen para que coincida con los item del menu */
+    margin-inline: 7%;
+    /* tamano fuente */
+    font-size: 30px;
+    /* Se agrega un Shadow al texto color blanco para que resalte un poco */
+    text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.7); 
+}
+
+/* ############################################################################################################################## */
+/* ############################################################################################################################## */
+article {
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    /* Se realiza un grid para posteriormente dejar 2 imagenes por row */
+    display: grid;
+    /* esto afecta a 2 de mis articulos, sin embargo a los primeros no los afecta porque es solo 1 item (creo) */
+    grid-template-columns: 1fr 1fr;
+    /* Se centran los objetos del articulo en medio del eje Y, en relacion de la imagen */
+    align-items: center;
+    /* el contenido de las cajas se centra? */
+    justify-content: center;
+    /* redondea las esquinas de la caja */
+    border-radius: 70px;
+    /* si una imagen o texto sale de la caja con esta config no se desborda */
+    overflow: hidden;
+    /* tamano de mi fuente */
+    font-size: 20px;
+    /* un margen pero a nivel del ROW */
+    margin-inline: 5px;
+    /*Deje un margen en el top para que no se topen */
+    margin-top: 2px; 
+}
+
+/* Las 3 siguientes clases se encargan de acomodar las cajas y los item */
+.columnapar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0px;
+    justify-content: center;
+}
+.columnaarticulos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    width: 80%;
+    justify-items: center;
+}
+section {
+    justify-items: center;
+}
+
+
+.cajatexto {
+    display: inline-flex;
+    flex-direction: column;
+    border-radius: 60px;
+    background-color: black ;
+    width: 280px;
+    height: 300px;
+    color: white;
+}
+.click {
+    display: inline-flex;
+    color: white;
+    justify-content: baseline;
+    text-align: justify;
+}
+p.ajustartext {
+    width: 90%;
+    text-align: justify;
+    font-size: 17px;
+}
+
+/* ############################################################################################################################## */
+/* ############################################################################################################################## */
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    /* Dejas las cajas en el centro */
+    justify-content: center;
+    padding-inline: 5%;
+    /* el gap es como un espacio entre items u objetos o cajas? */
+    gap:3%;
+    font-size: 18px;
+    background-color: #D7CCC8;
+    background-position-x: center;
+    margin-top: 100px;
+}
+
+.foot {
+    /* quita los puntos a las lista  del footer;) */
+    list-style-type: none;
+}
+
+.detalleslista {
+    display: grid;
+    grid-template-columns: repeat(2,2fr);
+    padding-inline: 5px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    padding-bottom: 1px;
+    padding-top: 1px;
+    justify-items:left;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.detalleslista:hover {
+    background-color: #3E2723;
+    border-radius: 10px;
+    color: white;
+} 

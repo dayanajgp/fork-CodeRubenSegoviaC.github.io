@@ -1,0 +1,152 @@
+/* Aplico para todo el contenido */
+body {
+    width: 1280px;
+    height: 1937px;
+    background-color: black;
+    color: white;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    }
+/* COMENZAR A ESTILAR PARTE SUPERIOR */
+header {
+    display: flex;
+    justify-content: center;
+    top: 0px;
+    width: 1280px;
+    height: 73px;
+}
+h1  {
+    width: 221px;
+    height: 59px;
+    top: 7px;
+    margin: 0%;
+    margin-top: 7px;
+    font-size: 50px;
+    text-align: left;
+    font: normal normal medium 50px/59px Raleway;
+    letter-spacing: 0px;
+}
+/* Se aplica a la fotografia de portada los margenes especificos */
+.portada {
+    width: 1280px;
+    height: 727px;
+    margin: 0%;
+}
+.informacion {
+    display: flex;
+    width: 1280px;
+    height: 348px;
+    justify-content: center;
+    gap: 106px;
+    margin: 0%;
+}
+.texto {
+    width: 475px;
+    height: 197px;
+    text-align: left;
+    font: normal normal 300 16px/19px Raleway;
+    letter-spacing: 0px;
+    margin-top: 76px;
+    margin-left: 150px;
+    font-size: 16px;
+}
+.imagen {
+    width: 399px;
+    height: 237px;
+    margin-top: 45px;
+    margin-bottom: 66px;
+    margin-right: 150px;
+}
+
+/* Comienzan las caracteristicas */
+
+.caracteristicas {
+    width: 1280px;
+    height: 348px;
+    background: #1E1A13 0% 0% no-repeat padding-box;
+    opacity: 0.98;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.alinear {
+    display: flex;
+    width: 1280px;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+}
+h3 {
+    display: flex;
+    font: normal normal medium 40px/47px Raleway;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+    font-size: 40px;
+    padding-top: 30px;
+}
+
+.descripcion {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font: normal normal 300 25px/30px Raleway;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+figcaption {
+    margin-top: 16px;
+}
+.descripcion i{
+    font-size: 59px;
+    width: 202px;
+}
+
+.galeria {
+    display: flex;
+    width: 1280px;
+    height: 202px;
+    gap: 16px;
+    margin-top: 73px;
+    margin-bottom: 73px;
+    margin-left: 0px;
+    justify-items: center;
+    justify-content: center;
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1280px;
+    height: 102px;
+    background: #1E1A13 0% 0% no-repeat padding-box;
+    opacity: 0.94;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    color: white;
+}
+a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 20px;
+    text-align: left;
+    font: normal normal 300 20px/24px Raleway;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+.portafolio {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
+
+.portafolio:last-child {
+    text-align: center;
+    align-items: center;
+
+}
