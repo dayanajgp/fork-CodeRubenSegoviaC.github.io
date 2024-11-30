@@ -105,10 +105,7 @@ h1 {
     margin-top: 0;
     align-content: center;
 }
-.datospersonales > div:hover {
-    box-shadow: 2px 3px 3px 1px rgb(108, 108, 108),
-                -4px -4px 8px 3px rgb(245, 245, 245);
-}
+
 .aboutme {
     display: flex;
     flex-flow:  wrap column;
@@ -129,11 +126,7 @@ h1 {
 .aboutme > div {
     align-content: center;
 }
-.aboutme > div:hover {
-    align-content: center;
-    box-shadow: 2px 3px 3px 1px rgb(108, 108, 108),
-                -4px -4px 8px 3px rgb(245, 245, 245);
-}
+
 
 .aboutme > div > p {
     margin-top: 5px;
@@ -163,11 +156,7 @@ h1 {
     align-content: center;
     margin-bottom: 7px;
 }
-.trabajos > div:hover {
-    align-content: center;
-    box-shadow: 2px 3px 3px 1px rgb(108, 108, 108),
-                -4px -4px 8px 3px rgb(245, 245, 245);
-}
+
 .educacion {
     display: flex;
     flex-flow:  wrap column;
@@ -192,11 +181,7 @@ h1 {
     align-content: center;
 
 }
-.educacion > div:hover {
-    align-content: center;
-    box-shadow: 2px 3px 3px 1px rgb(108, 108, 108),
-                -4px -4px 8px 3px rgb(245, 245, 245);
-}
+
 h3 {
     text-align: center;
     margin: 20px 0 20px 0;
