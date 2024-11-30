@@ -11,13 +11,41 @@
 <body>
     <header>
       <nav class="navbar navbar-expand-lg bg-dark">
-        <div class="container-fluid d-flex justify-content-center">
+        <div class="container-fluid d-flex justify-content-evenly">
           <a class="navbar-brand text-light" href="#inicio">PORTFOLIO RUBEN</a>
-            <ul>
-              <li>
-                <a class="nav-link active text-light" aria-current="page" href="">FORK</a>
-              </li>
-            </ul>
+          <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalToggleLabel">PRIMER FORK</h1>
+                  <button type="button btn-outline-secondary" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  A CONTINUACION EVIDENCIA DEL PRIMER FORK.
+                </div>
+                <div class="modal-footer">
+                  <button class="btn btn-outline-secondary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">GO SEGUNDO FORK</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">SEGUNDO FORK</h1>
+                  <button type="button btn-outline-secondary" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  A CONTINUACION EVIDENCIA DEL PRIMER FORK.
+                </div>
+                <div class="modal-footer">
+                  <button class="btn btn-outline-secondary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">GO PRIMER FORK</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="btn btn-light" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">FORKS AQUI</button>
         </div>
       </nav>
     </header>
